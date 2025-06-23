@@ -1,0 +1,35 @@
+
+/* src/style.css */
+
+@import "tailwindcss";
+/* Custom scrollbar for better UX on weather/news/research pages */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light gray track */
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #888; /* Darker gray thumb */
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Even darker gray on hover */
+}
+
+/* For Firefox */
+.custom-scrollbar {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: #888 #f0f0f0; /* thumb and track color */
+}
+
+/* You might want to add some global typography or body styles */
+body {
+  font-family: 'Inter', sans-serif; /* Or any other font you prefer */
+  color: #333;
+}

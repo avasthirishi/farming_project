@@ -1,0 +1,58 @@
+/* src/components/PageContainer.css */
+
+.page-container {
+  padding: 2rem;
+  max-width: 1200px; /* Max width for content, adjust as needed */
+  margin: 20px auto; /* Center the container with some top/bottom margin */
+  background-color: #ffffff; /* White background for page content */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  min-height: calc(100vh - 150px); /* Ensure it takes up some height, adjust based on header/footer height */
+  box-sizing: border-box; /* Include padding in height/width */
+}
+
+.page-title {
+  color: #28a745; /* Your primary green color */
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.5em;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+.page-description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2.5rem;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.page-content {
+  /* Styles for the actual content within the page */
+  padding-top: 1rem; /* Space between description and content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 1.5rem;
+    margin: 10px auto;
+  }
+  .page-title {
+    font-size: 2em;
+  }
+  .page-description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    padding: 1rem;
+    border-radius: 0; /* No rounded corners on very small screens */
+  }
+  .page-title {
+    font-size: 1.8em;
+  }
+}
