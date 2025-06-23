@@ -1,3 +1,9 @@
+"homepage": "https://avasthirishi.github.io/farming_project",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  ...
+}
 {
   "name": "organic-harvest-hub",
   "version": "1.0.0",
